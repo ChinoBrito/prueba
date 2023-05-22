@@ -1,0 +1,63 @@
+h1 {
+    color: rgb(226, 15, 33);
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(8, 3, 83);
+    border-radius: 10px 0 10px 0;
+    padding: 100px;
+    margin-top: 10px;
+}
+body {
+    background-color: rgb(26, 5, 102);
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px repeat(3, 40px);
+    align-items: center;
+    justify-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.contenedor {
+    display: grid;
+    height: 100px;
+    width: 100px;
+    padding-left: 1000px;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "item-1 item-2 ." "item-4 item-3 .";
+    
+}
+.grid-items {
+    height: 50%;
+    width: 50%;
+    align-items: start;
+padding: 5px;
+margin-left: 5px;
+text-align: center;
+}
+.item-1 {
+    grid-area: item-1;
+}
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+.item-4 {
+    grid-area: item-4;
+}
+.footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    background-color: rgb(18, 29, 180);
+    margin-bottom: 10px;
+    }
+    .boton {
+        background-color: black;
+        color: whitesmoke;
+    }
